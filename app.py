@@ -11,7 +11,7 @@ def hello_world():
 
 @app.route('/sentiment')
 def get_text_sentiment():
-    return get_sentiment("This pasta sucks");
+    return get_sentiment(request.args.get("text"));
 
 
 if __name__ == '__main__':
