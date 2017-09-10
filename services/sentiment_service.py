@@ -8,7 +8,7 @@ def __clean_text(text):
 
 def get_sentiment(text):
     analysis = TextBlob(__clean_text(text))
-    # set sentiment
+
     if analysis.sentiment.polarity > 0:
         return 'positive'
     elif analysis.sentiment.polarity == 0:
