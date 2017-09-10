@@ -5,7 +5,7 @@ from services.twitter_service import TwitterClient
 
 app = Flask(__name__)
 app.config.from_object('config.BaseConfig')
-twitter_client = TwitterClient.getInstance()
+twitter_client = TwitterClient()
 
 @app.route('/')
 def hello_world():
